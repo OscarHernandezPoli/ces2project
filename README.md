@@ -1,2 +1,4 @@
-# ces2project
-Proyectos para CES2
+#Entrega Uno
+Título y presentación general: 
+
+Plantilla de soporte y cronograma
