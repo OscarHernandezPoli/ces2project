@@ -14,3 +14,12 @@ Problema / descripción del proceso actual:
 
 En este momento la empresa esta llevando las planillas de los trabajos a sus clientes en documentos de word y posteriormente los guardan en una carpeta "X" dentro de un equipo que no es el equipo principal esto genera que al buscar los soportes realizados se encuentren con una cantidad de documentos que dificulta el buscar el soporte requerido haciendo que el proceso sea tedioso y lento.
 
+Solución:
+
+la solucion es crear una software que permita a nuestra empresa utilizar una plantilla que genere un historico para consultas en cualquier momento. teniendo un cronograma integrado para consultar las planillas de soporte de uno o varios clientes con la posibilidd de consultarlas en cualquier tiempo de realizacion
+
+Justificación: 
+
+El software podria tener un impacto mayor a las soluciones que se pueden encontrar gratuitas en intenet ya que posee las 2 caracteristicas que necesita una empresa para llevar un control de los servicios prestados o facturados, la recepcion de servicios y un historial cronologico de estos mismos teniendo la posibilidad de buscar servicios por clientes y/o clientes en los servicios
+
+Diagrama del proceso de ingeniería de software donde evidencie el problema a abordar: cualquier diagrama del proceso de análisis de software que sustente o explique el flujo de trabajo de la solución. (casos de uso, diagrama de flujo, diagrama de maquinas de estado, diagrama de clases, diagrama de componentes ...)
