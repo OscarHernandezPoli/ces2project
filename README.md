@@ -22,6 +22,6 @@ Justificación:
 
 El software podría tener un impacto mayor a las soluciones que se pueden encontrar gratuitas en intenet ya que posee las 2 caracteristicas que necesita una empresa para llevar un control de los servicios prestados o facturados, la recepcion de servicios y un historial cronológico de estos mismos teniendo la posibilidad de buscar servicios por clientes y/o clientes en los servicios.
 
-Diagrama del proceso de ingeniería de software donde evidencie el problema a abordar: cualquier diagrama del proceso de análisis de software que sustente o explique el flujo de trabajo de la solución. (casos de uso, diagrama de flujo, diagrama de maquinas de estado, diagrama de clases, diagrama de componentes ...)
+Diagrama del proceso de ingeniería de software donde evidencie el problema a abordar: 
 
 ![Diagrama](https://github.com/OscarHernandezPoli/ces2project/blob/informe-uno/img/Diagrama%20de%20uso.PNG) 
