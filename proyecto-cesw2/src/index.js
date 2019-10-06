@@ -12,7 +12,8 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //routes
-app.use('/api/cesw2', require('./routes/crud.routes'));
+//app.use('/api/cesw2', require('./routes/crud.routes'));
+app.use('/api/cesw2', require('./routes/user.routes'));
 
 //static files
 

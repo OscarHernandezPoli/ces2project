@@ -10,6 +10,7 @@ router.get('/', async (req, res) => {
 
 });
 
+//read one
 router.get('/:id', async(req, res)=>{
     const task = await Task.findById(req.params.id);
     res.json(task);
@@ -21,7 +22,7 @@ router.post('/', async (req, res) => {
     const task = new Task({ tittle, description });
     await task.save();
     console.log(task);
-    res.json({ status: 'task saved' });
+    res.status(200).json({ status: 'task saved' });
 })
 
 //update
