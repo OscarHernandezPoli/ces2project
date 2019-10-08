@@ -21,8 +21,6 @@ routerUser.post('/', async (req, res) => {
     const { cedula, fullName, number, email, company, workArea } = req.body;
     try {
         const user = new User({ cedula, fullName, number, email, company, workArea });
-
-
         await user.save();
         console.log(user);
         res.status(200).json({ status: 'user saved' });
