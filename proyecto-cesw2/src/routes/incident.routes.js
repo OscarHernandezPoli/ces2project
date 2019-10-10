@@ -13,3 +13,4 @@ routerIncident.get('/', async(req,res)=>{
 routerIncident.get('/:id', async(req,res)=>{
 
 })
+
