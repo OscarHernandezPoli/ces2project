@@ -16,7 +16,6 @@ app.use(express.json());
 app.use('/api/cesw2', require('./routes/user.routes'));
 
 //static files
-
 app.use(express.static(path.join(__dirname, 'public')));
 
 

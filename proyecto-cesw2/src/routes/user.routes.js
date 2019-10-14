@@ -17,7 +17,7 @@ routerUser.get('/:cedula', async (req, res) => {
 });
 
 //create
-routerUser.post('/', async (req, res) => {
+routerUser.post('/', async (req, res, next) => {
     const { cedula, fullName, number, email, company, workArea } = req.body;
     try {
         const user = new User({ cedula, fullName, number, email, company, workArea });
@@ -31,18 +31,31 @@ routerUser.post('/', async (req, res) => {
 });
 
 //update
-routerUser.put('/:cedula', async (req, res) => {
+routerUser.put('/:cedula', async (req, res, next) => {
     const { cedula, fullName, number, email, company, workArea } = req.body;
-    const newUser = { cedula, fullName, number, email, company, workArea };
-    console.log({ cedula: req.params.cedula });
-    await User.findOneAndUpdate({ cedula: req.params.cedula }, newUser);
-    res.status(200).json({ status: 'user update' });
+    try {
+        const newUser = { cedula, fullName, number, email, company, workArea };
+        console.log({ cedula: req.params.cedula });
+        await User.findOneAndUpdate({ cedula: req.params.cedula }, newUser);
+        res.status(200).json({ status: 'user update' });
+    } catch (error) {
+        console.log(error);
+        next(error);
+    }
+
+
 });
 
 //delete
-routerUser.delete('/:id', async (req, res) => {
-    await User.findByIdAndRemove(req.params.id);
-    res.json({ status: 'User deleted' });
+routerUser.delete('/:cedula', async (req, res) => {
+    const {cedula} = req.body;
+    try {
+        await User.findOneAndDelete({cedula: cedula});
+        res.status(200).json({ status: 'User deleted' });
+    } catch (error) {
+        console.log(error);
+    }
+    
 })
 
 
